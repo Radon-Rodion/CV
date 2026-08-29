@@ -1,5 +1,3 @@
-'use server'
-
 import data, { DataLang } from '@/data';
 import EducationSection from '@/components/educationSection';
 import ExperienceSection from '@/components/experienceSection';
