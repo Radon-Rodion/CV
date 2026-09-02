@@ -25,10 +25,10 @@ export default async function Page({ params }: { params: Promise<IPageProps> }) 
     return <LabelsContextProvider labels={dataToUse.labels}>
         <main className="relative flex flex-col md:flex-row gap-5 bg-zinc-50 dark:bg-black font-sans w-full p-5 md:p-0">
             <LanguageSelector languages={languages.map(l => l.lang)} currentLang={lang} />
-            <div className="contents md:flex md:flex-col bg-zinc-100 dark:bg-zinc-900 md:py-5 md:pl-5 md:pr-3 h-screen">
+            <div className="contents md:flex md:flex-col bg-secondary dark:bg-zinc-900 md:py-5 md:pl-5 md:pr-3 h-screen">
                 <ContactsSection
                     contactData={dataToUse.contactData}
-                    className="order-1 md:order-none [&>div]:space-y-0 [&>h2]:mt-1"
+                    className="order-1 md:order-none [&>div]:space-y-0 [&>h2]:mt-0 [&>h2]:font-bold [&>h2]:text-3xl"
                 />
                 <LanguagesSection
                     additionalData={dataToUse.additionalData}

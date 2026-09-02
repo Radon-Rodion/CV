@@ -10,13 +10,14 @@ export default function SkillItem({ skill }: ISkillItemProps) {
     const hasLevel = skill.level != null;
     const hasLabel = skill.label != null;
 
-    const itemsClass = "text-sm font-medium text-gray-800 dark:text-gray-300 break-words";
+    const itemsClass = (it: { link?: string }) =>
+        `text-sm font-medium ${it.link ? 'text-link' : 'text-zinc-800'} dark:text-gray-300 break-words`;
 
     return <div className="flex flex-col gap-2 w-full max-w-md px-4 py-1">
         <p className="flex">
             {skill.items.map(it => it.link ?
-                <a key={it.name} href={it.link} className={itemsClass}>{it.name}.&nbsp;</a> :
-                <span key={it.name} className={itemsClass}>{it.name}.&nbsp;</span>
+                <a key={it.name} href={it.link} className={itemsClass(it)}>{it.name}.&nbsp;</a> :
+                <span key={it.name} className={itemsClass(it)}>{it.name}.&nbsp;</span>
             )}
             {hasLabel &&
                 <span className="flex h-5 w-5 items-center justify-center rounded-full text-xs bg-black font-thin text-white dark:bg-white dark:font-medium dark:text-black">
@@ -28,7 +29,7 @@ export default function SkillItem({ skill }: ISkillItemProps) {
         {
             hasLevel && (
                 <div
-                    className="h-1 w-full bg-gray-200 dark:bg-gray-800 rounded-full overflow-hidden"
+                    className="h-1 w-full bg-gray-300 dark:bg-gray-800 rounded-full overflow-hidden"
                     role="progressbar"
                     aria-valuenow={skill.level}
                     aria-valuemin={0}

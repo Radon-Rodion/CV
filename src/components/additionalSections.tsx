@@ -25,7 +25,7 @@ export function AboutMeSection({ additionalData, className }: IAdditionalSection
     const labels = useContext(LabelsContext);
     const { aboutMe } = additionalData;
     return <Section id="about-me" name={labels.aboutMe} className={className}>
-        <p className="text-zinc-600 dark:text-zinc-400 italic mt-1">{aboutMe}</p>
+        <p className="text-zinc-600 dark:text-zinc-400 mt-1">{aboutMe}</p>
     </Section>;
 }
 

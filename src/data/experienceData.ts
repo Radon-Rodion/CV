@@ -4,8 +4,8 @@ import { IExperience } from "@/models/experience";
 export const experienceDataRus: IExperience = {
     company: "ООО «Б1-Диджитал»",
     companyDescription: "Внутренняя IT-разработка для сфер аудита, налогов и консалтинга",
-    period: "Сентябрь 2022 — по настоящее время (3 года 10 месяцев)",
-    role: "Ведущий инженер-программист (Middle FullStack разработчик)",
+    period: "Сентябрь 2022 — по настоящее время (4 года)",
+    role: "Ведущий инженер-программист (FullStack разработчик)",
     techStack: [
         ".NET (Core 3.1 - 10)", "ASP.NET Core", "PostgreSQL", "MS SQL",
         "Node.js", "TypeScript", "React", "Next.js (App Router)",
@@ -70,16 +70,11 @@ export const experienceDataRus: IExperience = {
 };
 
 export const experienceDataEng: IExperience = {
+    ...experienceDataRus,
     company: "B1 Digital LLC",
     companyDescription: "In-house IT development for audit, tax, and consulting sectors",
-    period: "September 2022 — Present (3 years 10 months)",
-    role: "Lead Software Engineer (Middle FullStack Developer)",
-    techStack: [
-        ".NET (Core 3.1 - 10)", "ASP.NET Core", "PostgreSQL", "MS SQL",
-        "Node.js", "TypeScript", "React", "Next.js (App Router)",
-        "Redux Toolkit", "GraphQL", "SignalR", "REST API",
-        "LLM", "RAG", "Jest", "Git", "Gitea"
-    ],
+    period: "September 2022 — Present (4 years)",
+    role: "Lead Software Engineer (FullStack Developer)",
     projects: [
         {
             title: "AI-Driven Development Automation",
