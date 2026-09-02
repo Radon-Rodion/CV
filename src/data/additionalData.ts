@@ -6,7 +6,7 @@ export const additionalDataRus: IAdditional = {
     { name: "Английский", level: "B2" },
     { name: "Немецкий", level: "A1" }
   ],
-  qualities: ["Обучаемость", "Ответственность", "Исполнительность"]
+  qualities: ["Гибкость", "Адаптивность", "Стрессоустойчивость", "Работа в команде"]
 };
 
 export const additionalDataEng: IAdditional = {
@@ -15,5 +15,5 @@ export const additionalDataEng: IAdditional = {
     { name: "English", level: "B2" },
     { name: "German", level: "A1" }
   ],
-  qualities: ["Fast learner", "Responsible", "Reliable"]
+  qualities: ["Flexibility", "Adaptability", "Resilience", "Teamwork"]
 };
