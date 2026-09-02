@@ -12,6 +12,7 @@ export const contactDataRus: IContact = {
 
 export const contactDataEng: IContact = {
   ...contactDataRus,
+  linkedIn: { ...contactDataRus.linkedIn, name: 'Pavel Rafeyeu' },
   name: "PAVEL RAFEYEU",
   location: "Minsk"
 };

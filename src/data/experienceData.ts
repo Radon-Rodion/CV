@@ -74,7 +74,7 @@ export const experienceDataEng: IExperience = {
     company: "B1 Digital LLC",
     companyDescription: "In-house IT development for audit, tax, and consulting sectors",
     period: "September 2022 — Present (4 years)",
-    role: "Lead Software Engineer (FullStack Developer)",
+    role: "Software Engineer (FullStack Developer)",
     projects: [
         {
             title: "AI-Driven Development Automation",
