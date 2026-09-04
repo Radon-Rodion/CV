@@ -13,7 +13,7 @@ export default function Section({ id, name, children, className, withRightLine =
 
     return <section id={id} className={className}>
         <h2 className={titleClassName}>{name}</h2>
-        <div className="space-y-6">
+        <div className="space-y-3">
             {children}
         </div>
     </section>

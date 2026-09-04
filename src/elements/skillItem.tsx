@@ -13,7 +13,7 @@ export default function SkillItem({ skill }: ISkillItemProps) {
     const itemsClass = (it: { link?: string }) =>
         `text-sm font-medium ${it.link ? 'text-link' : 'text-zinc-800'} dark:text-gray-300 break-words`;
 
-    return <div className="flex flex-col gap-2 w-full max-w-md px-4 py-1">
+    return <div className="flex flex-col gap-2 w-full max-w-md px-4 pb-1">
         <p className="flex">
             {skill.items.map(it => it.link ?
                 <a key={it.name} href={it.link} className={itemsClass(it)}>{it.name}.&nbsp;</a> :

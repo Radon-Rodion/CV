@@ -3,7 +3,7 @@ import { ILabels } from "@/models/labels";
 
 export const labelsRus: ILabels = {
     phone: 'Телефон',
-    email: 'Эл.Почта',
+    email: 'Почта',
     linkedIn: 'LinkedIn',
     github: 'Гитхаб',
     location: 'Город',

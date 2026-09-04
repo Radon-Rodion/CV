@@ -1,7 +1,7 @@
 import { IAdditional } from "@/models/additional";
 
 export const additionalDataRus: IAdditional = {
-  aboutMe: "Fullstack-developer React+ASP.NET, стандартизатор и автоматизатор, кошатник",
+  aboutMe: "Full-stack разработчик .NET/React, специализируюсь на стандартизации и автоматизации разработки | Кошатник",
   languages: [
     { name: "Английский", level: "B2" },
     { name: "Немецкий", level: "A1" }
@@ -10,7 +10,7 @@ export const additionalDataRus: IAdditional = {
 };
 
 export const additionalDataEng: IAdditional = {
-  aboutMe: "Full-stack React+ASP.NET developer focused on standardization and automation | Cat lover",
+  aboutMe: "Full-stack .NET/React engineer focused on standardization, automation, code quality, and developer productivity | Cat lover",
   languages: [
     { name: "English", level: "B2" },
     { name: "German", level: "A1" }

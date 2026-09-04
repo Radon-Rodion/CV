@@ -16,7 +16,7 @@ export default function ContactsSection({ contactData, className }: IContactsSec
 
     return <Section id="contacts" name={contactData.name} className={className} withRightLine={false}>
         <Image
-            src="photo.jpg"
+            src="photo.png"
             alt="Pavel Rafeyeu"
             className="w-30 w-max-[640px] self-center mb-2 rounded-md"
             width="12" height="14"
