@@ -23,9 +23,9 @@ export default async function Page({ params }: { params: Promise<IPageProps> }) 
     const dataToUse = data[lang];
 
     return <LabelsContextProvider labels={dataToUse.labels}>
-        <main className="relative flex flex-col md:flex-row gap-5 bg-zinc-50 dark:bg-black font-sans w-full p-5 md:p-0">
+        <main className="relative flex flex-col md:flex-row gap-5 bg-zinc-50 dark:bg-black font-sans w-full p-0 md:p-0">
             <LanguageSelector languages={languages.map(l => l.lang)} currentLang={lang} />
-            <div className="contents md:flex md:flex-col md:w-[35%] bg-secondary dark:bg-zinc-900 md:py-5 md:pl-5 md:pr-3 h-screen">
+            <div className="contents md:flex md:flex-col md:w-[35%] bg-secondary dark:bg-zinc-900 md:py-2 md:pl-5 md:pr-3 h-screen">
                 <ContactsSection
                     contactData={dataToUse.contactData}
                     className="order-1 md:order-none [&>div]:space-y-0 [&>h2]:mt-0 [&>h2]:font-bold [&>h2]:text-3xl"
@@ -43,7 +43,7 @@ export default async function Page({ params }: { params: Promise<IPageProps> }) 
                     className="order-7 md:order-none"
                 />
             </div>
-            <div className="contents md:flex md:flex-col md:py-5 md:pr-5">
+            <div className="contents md:flex md:flex-col md:pt-2 md:pb-0 md:pr-5">
                 <ExperienceSection
                     experienceData={dataToUse.experienceData}
                     className="order-2 md:order-none"

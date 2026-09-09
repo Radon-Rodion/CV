@@ -9,17 +9,17 @@ export const experienceDataRus: IExperience = {
         "C# / .NET (Core 3.1, 5–10)", "ASP.NET Core",
         "PostgreSQL", "MS SQL Server", "ClickHouse",
         "GraphQL", "REST", "SignalR",
-        "Docker", "GoCD (CI/CD)",
-        "Node.js", "TypeScript", "React", "Next.js (App Router)",
-        "Redux Toolkit", "Jest",
-        "Git", "Gitea",
-        "LLM integration", "RAG"
+        "Docker", "GoCD (CI/CD)", "Sentry",
+        "Node.js", "TypeScript", "React", "Next.js", "RTK", 
+        "Jest", "xUnit", "MSTest",
+        "Git",
+        "LLM", "RAG", "OpenWebUI", "Hermes", "Cursor"
     ],
     projects: [
         {
             title: "ИИ-автоматизация разработки: Orchestrator",
             period: "Май 2026 — по настоящее время",
-            stack: ["LLM", "Node.js", "TypeScript", "JSDoc", "Jest", "Gitea"],
+            stack: ["LLM", "Node.js", "TypeScript", "JSDoc", "Jest", "Gitea", "Hermes", "Cursor", "OpenWebUI"],
             achievements: [
                 "Разработал ИИ-конвейер (pipeline), который анализирует AST проекта, автоматически генерирует JSDoc и тесты (Jest), строит UML-диаграммы и выполняет рефакторинг.",
                 "Оптимизировал алгоритмы передачи контекста в LLM-агент, что позволило эффективно работать в условиях ограниченного контекстного окна и сократило ошибки ИИ с более чем 30% до 1–2% после валидации.",
@@ -29,7 +29,7 @@ export const experienceDataRus: IExperience = {
         {
             title: "ИИ-агент с раздельными базами знаний",
             period: "Февраль 2026 — Май 2026",
-            stack: ["ASP.NET Core", "PostgreSQL", "OAuth 2.0", "RAG", "LLM", "GraphQL", "Docker", "Next.js (App Router)", "React", "Redux Toolkit", "Tailwind"],
+            stack: ["ASP.NET Core", "PostgreSQL", "Keycloak", "RAG", "LLM", "GraphQL", "Docker", "Next.js (App Router)", "React", "Redux Toolkit", "Tailwind", "Sentry"],
             achievements: [
                 "Спроектировал и разработал архитектуру клиентской части (Frontend) интеллектуального агента.",
                 "Разработал отказоустойчивый сервис синхронизации баз знаний (RAG) с внешними источниками информации через GraphQL-запросы.",
@@ -40,7 +40,7 @@ export const experienceDataRus: IExperience = {
         {
             title: "Система сертификации сотрудников",
             period: "Октябрь 2024 — Февраль 2026",
-            stack: ["ASP.NET Core", "PostgreSQL", "ClickHouse", "SignalR", "Docker", "GoCD (CI/CD)", "React", "Vite", "Redux", "REST API", "SCSS-модули"],
+            stack: ["ASP.NET Core", "PostgreSQL", "ClickHouse", "SignalR", "xUnit", "Docker", "GoCD (CI/CD)", "React", "Vite", "Redux", "REST API", "SCSS-модули", "Sentry"],
             achievements: [
                 "Вносил вклад в сквозное проектирование и разработку корпоративной системы (БД, Backend и Frontend).",
                 "Разработал архитектуру передачи данных в реальном времени: первичное получение данных через HTTP REST API и динамическое обновление интерфейсов через SignalR.",
@@ -52,7 +52,7 @@ export const experienceDataRus: IExperience = {
         {
             title: "Система архивного хранения и электронного документооборота",
             period: "Сентябрь 2022 — Октябрь 2024",
-            stack: ["ASP.NET Core", "MS SQL", "MVC", "Razor Pages", "jQuery", "TUS"],
+            stack: ["ASP.NET Core", "MS SQL", "MVC", "Razor Страницы", "jQuery", "TUS", "MSTest"],
             achievements: [
                 "Провел масштабный рефакторинг Legacy-кода и обновил целевую платформу с .NET Core 3.1 до .NET 8.",
                 "Внедрил протокол TUS для возобновляемой загрузки крупных файлов (от 2 Гб), чтобы предотвратить обрывы сессий и timeout’ы при медленном/нестабильном соединении.",
@@ -82,7 +82,7 @@ export const experienceDataEng: IExperience = {
         {
             title: "AI Development Automation Orchestrator",
             period: "May 2026 — Present",
-            stack: ["LLM", "Node.js", "TypeScript", "JSDoc", "Jest", "Gitea"],
+            stack: ["LLM", "Node.js", "TypeScript", "JSDoc", "Jest", "Gitea", "Hermes", "Cursor", "OpenWebUI"],
             achievements: [
                 "Engineered an AI pipeline that analyzes project AST, automatically generates JSDoc and Jest tests, generates UML diagrams, and performs code refactoring.",
                 "Optimized context delivery algorithms for the AI agent, enabling efficient performance within limited LLM context windows and reducing AI errors from over 30% to 1–2% after validation.",
@@ -92,7 +92,7 @@ export const experienceDataEng: IExperience = {
         {
             title: "AI Agent with Isolated Knowledge Bases",
             period: "February 2026 — May 2026",
-            stack: ["ASP.NET Core", "PostgreSQL", "OAuth 2.0", "RAG", "LLM", "GraphQL", "Docker", "Next.js (App Router)", "React", "Redux Toolkit", "Tailwind"],
+            stack: ["ASP.NET Core", "PostgreSQL", "Keycloak", "RAG", "LLM", "GraphQL", "Docker", "Next.js (App Router)", "React", "Redux Toolkit", "Tailwind", "Sentry"],
             achievements: [
                 "Designed and developed the frontend architecture for the AI agent application.",
                 "Developed a fault-tolerant service for synchronizing knowledge bases (RAG) with external data sources using GraphQL queries.",
@@ -103,7 +103,7 @@ export const experienceDataEng: IExperience = {
         {
             title: "Employee Certification System",
             period: "October 2024 — February 2026",
-            stack: ["ASP.NET Core", "PostgreSQL", "ClickHouse", "SignalR", "Docker", "GoCD (CI/CD)", "React", "Vite", "Redux", "REST API", "SCSS Modules"],
+            stack: ["ASP.NET Core", "PostgreSQL", "ClickHouse", "SignalR", "xUnit", "Docker", "GoCD (CI/CD)", "React", "Vite", "Redux", "REST API", "SCSS Modules", "Sentry"],
             achievements: [
                 "Contributed to the end-to-end architecture design and development of the enterprise system (DB, Backend and Frontend).",
                 "Designed and developed a real-time data delivery architecture combining initial data retrieval via HTTP REST API with dynamic UI updates via SignalR.",
@@ -115,7 +115,7 @@ export const experienceDataEng: IExperience = {
         {
             title: "Archival Storage and Electronic Document Management System",
             period: "September 2022 — October 2024",
-            stack: ["ASP.NET Core", "MS SQL", "MVC", "Razor Pages", "jQuery", "TUS"],
+            stack: ["ASP.NET Core", "MS SQL", "MVC", "Razor Pages", "jQuery", "TUS", "MSTest"],
             achievements: [
                 "Performed extensive refactoring of legacy code and upgraded the target framework from .NET Core 3.1 to .NET 8.",
                 "Implemented the TUS protocol for resumable large-file uploads (2GB+) to prevent session drops and timeouts over slow or unstable connections.",
